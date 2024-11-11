@@ -23,8 +23,10 @@ body, html {
 .construction-header, .construction-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     position: absolute;
+    padding: 0 2rem;
 }
 
 .construction-header {
@@ -39,12 +41,17 @@ body, html {
     flex: none;
     margin-left: 2rem;
     margin-right: 2rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .center-text {
-    flex: 1;
+    flex: none;
+    margin: 0 auto;
+    font-size: 0.8rem;
     text-align: center;
+    position: absolute; /* Fija la posición */
+    left: 50%;
+    transform: translateX(-50%); /* Asegura el centrado */
 }
 
 /* Logo y botón */
@@ -84,7 +91,7 @@ body, html {
 }
 
 .construction-footer a:hover {
-    color: #ec5610;
+    color: #ec5610 !important;
 }
 
 /* Media Query para pantallas pequeñas en orientación horizontal */
