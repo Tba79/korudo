@@ -11,9 +11,21 @@ body, html {
     align-items: center;
     text-align: center;
     color: #fff;
-    background: url('../img/FONDO_KORUDO_COLD_BREW.png') no-repeat center center/cover;
     overflow: hidden; /* Evita el scroll */
     box-sizing: border-box; /* Asegura que padding no cause desbordamiento */
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .container {
@@ -51,7 +63,6 @@ body, html {
     left: 50%;
     transform: translateX(-50%); 
 }
-
 
 .logo {
     max-width: 50%;
